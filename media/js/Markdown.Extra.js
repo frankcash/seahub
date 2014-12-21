@@ -18,7 +18,7 @@
   // patch for ie7
   if (!Array.indexOf) {
     Array.prototype.indexOf = function(obj) {
-      for (var i = 0; i < this.length; i++) {
+      for (var i = 0, ii=this.length ; i < ii; i++) {
         if (this[i] == obj) {
           return i;
         }
